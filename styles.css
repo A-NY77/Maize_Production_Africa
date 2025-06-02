@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#yearSelect {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  background: #eee;
+}
+#mapWrapper {
+  flex: 1;
+  display: flex;
+}
+.map {
+  flex: 1;
+  height: 100%;
+  border: 1px solid #ccc;
+  position: relative;
+}
+#legend {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  border: 1px solid #aaa;
+  padding: 10px;
+  font-size: 0.8em;
+  z-index: 1000;
+}
+#legend table {
+  border-collapse: collapse;
+}
+#legend td {
+  width: 15px;
+  height: 15px;
+}
+.popup {
+  background: white;
+  padding: 5px;
+  border: 1px solid #ccc;
+  min-width: 120px;
+  font-size: 0.8em;
+}
