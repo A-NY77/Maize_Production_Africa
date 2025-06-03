@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function loadGeoJSON(year) {
-    fetch('data/africa_maize.geojson')
+    fetch('data.geojson')
       .then(response => response.json())
       .then(data => {
         const vectorSource = new ol.source.Vector({
